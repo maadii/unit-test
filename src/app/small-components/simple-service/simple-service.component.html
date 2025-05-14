@@ -1,0 +1,19 @@
+<div class="container">
+    <h2>Items List</h2>
+    
+    <div f="errorMessage" class="error">
+        {{ errorMessage }}
+    </div>
+
+    <div If="items.length > 0" class="items-list">
+        <div *ngFor="let item of items" class="item">
+            <h3>{{ item.name }}</h3>
+            <p>{{ item.description }}</p>
+            <button (click)="getItemById(item.id)">Get Details</button>
+        </div>
+    </div>
+
+    <div If="items.length === 0" class="no-items">
+        No items found.
+    </div>
+</div>
