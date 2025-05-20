@@ -1,4 +1,5 @@
 import { calculateSquare } from './calculate-Square';
+
 describe('calculateSquare', () => {
   it('should return the square of a number', () => {
     const inputNumber = 5;
